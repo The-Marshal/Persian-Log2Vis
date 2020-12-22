@@ -67,7 +67,7 @@
 			$length = strlen($str);
 			
 			for($i = 0; $i < $length; $i++) {
-				$char = ord($str{$i}); // get one string character at time
+				$char = ord($str[$i]); // get one string character at time
 				if(count($bytes) == 0) { // get starting octect
 					if ($char <= 0x7F) {
 						$unicode[] = $char; // use the character "as is" because is ASCII
